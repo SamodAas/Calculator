@@ -14,6 +14,9 @@ public class CalculationFunctions {
         return result;
     }
     public static float squareRoot(float a){
+        if (a<0){
+            a=a-2*a;
+        }
         float b = (float)Math.sqrt(a);
         return b;
     }
